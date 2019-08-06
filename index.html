@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="">
+<head>
+	<meta charset="utf-8">
+	<!-- JQuery Framework -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>Word of Warcraft</title>
+	<!-- Style File Section -->
+	<link rel="stylesheet"  href="css/style.css">
+
+	<link rel="icon" href="https://i11b.3djuegos.com/juegos/15350/world_of_warcraft__battle_for_azeroth/fotos/ficha/world_of_warcraft__battle_for_azeroth-4633617.jpg">
+	<link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">	
+	
+	
+
+</head>
+<body ng-controller="listado">
+	<div class="container-fluid nav">
+		
+		<div class="row hefer">
+			<div class="col-md 12 Bizq">
+				<span class="titulo"></span>
+			</div><img src="">
+			
+		</div>
+		
+	</div>
+</div>
+	<br>
+
+	<div class="container-fluid">
+		<div class="row hg">
+			<div class="col-md-3 pad" ng-repeat="p in listado">
+				<div class="pokeInfo">
+					<div>
+						<!-- Pokemon Picture -->
+              <!-- <img class="pokePicture" src="{{x.sprites.front_default}}" alt="Poke"> -->
+						<img  class="img-responsive imgPoke"src="{{p.data.sprites.front_default}}" alt="poke">
+					</div>
+					<!-- <div class="pokeName">{{x.data.name}}</div> -->
+					<div class="n text-center">
+					{{p.data.name}}
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- AngularJS v1 Framework -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+	<!-- Function's File -->
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
